@@ -58,3 +58,5 @@ insert into produtos (id_produto, nome, ano, preço, categoria) values
 (58, 'Lenovo Chromebook Duet 4GB RAM 1TB HD', '2025', '1610.00', 'Notebook'),
 (59, 'ASUS Zenbook 14 OLED 16GB RAM 1TB SSD', '2024', '8870.00','Notebook'),
 (60, 'Dell XPS 13 Plus 32GB RAM 1TB SSD', '2023', '12000.00', 'Notebook');
+
+select * from produtos;
