@@ -1,0 +1,21 @@
+describe pedidos;
+
+
+alter table clientes add id_pedido int; alter table clientes
+add foreign key (id_pedido) references id (pedidos);
+
+alter table produtos add id_cliente int; alter table produtos
+add foreign key (id_cliente) references id (clientes);
+ 
+alter table pedidos add id_produto int; alter table pedidos
+add foreign key (id_produto) references id (produtos);
+
+alter table pedidos
+drop column id_produtos;
+
+
+describe pedidos;
+
+
+alter table pedidos add id_cliente int; alter table pedidos
+add foreign key (id_cliente) references id (clientes);
