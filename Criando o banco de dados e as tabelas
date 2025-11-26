@@ -1,0 +1,30 @@
+create database loja_virtual default character set utf8mb4
+default collate utf8mb4_general_ci;
+
+
+use loja_virtual;
+
+
+create table clientes (
+id int not null auto_increment, nome varchar(10),
+endereço varchar (30), sexo enum('M', 'F'),
+telefone char (10), primary key(id)
+) default charset = utf8;
+
+
+create table produtos (
+id_produto int not null auto_increment, nome varchar(10),
+ano year(4),
+preço decimal (10,2),
+primary key(id_produto)
+) default charset = utf8mb4;
+
+
+create table pedidos (
+id_pedido int not null auto_increment, data_pedido date,
+situação tinytext,
+primary key(id_pedido)
+) default charset = utf8mb4;
+
+
+describe clientes;
