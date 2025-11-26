@@ -1,0 +1,24 @@
+alter table clientes
+modify column nome varchar(30);
+
+
+alter table clientes
+modify column endereço varchar(60);
+
+
+select * from clientes;
+
+
+describe produtos;
+
+
+alter table produtos
+add column categoria varchar(10);
+
+
+alter table produtos
+modify column categoria varchar(40);
+
+
+alter table produtos
+modify column nome varchar(50);
