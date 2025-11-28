@@ -999,3 +999,5 @@ insert into pedidos (id_pedido, data_pedido, situação, id_produto, id_cliente)
 (998, '2024-12-22', 'entregue', '13', '404'),
 (999, '2024-12-27', 'entregue', '58', '49'),
 (1000, '2024-12-29', 'entregue', '29', '194');
+
+select * from pedidos;
