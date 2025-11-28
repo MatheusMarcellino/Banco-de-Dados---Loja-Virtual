@@ -1,0 +1,97 @@
+select count(*) from produtos where ano = '2024'
+order by categoria;
+
+
+select count(*) from produtos 
+where ano = '2023' 
+order by categoria;
+
+
+select count(*) from produtos where ano = '2025';
+
+
+select count(*) from produtos where preço >=3000.00;
+
+
+select count(*) from pedidos where id_produto >= 45.00;
+
+
+select count(*) from pedidos where id_produto >= 150.00;
+
+
+select distinct categoria from produtos order by categoria;
+
+
+select distinct preço from produtos order by preço;
+
+
+select distinct nome from clientes order by nome;
+
+
+select estoque, count(*) from produtos where ano = '2024'
+ 
+group by estoque order by estoque;
+
+
+select nome, count(*) from clientes where sexo = 'M'
+group by nome order by nome;
+
+
+select data_pedido, count(*) from pedidos where situação = 'entregue'
+group by data_pedido order by data_pedido;
+
+
+select preço, count(*) from produtos where preço >= 2000
+group by preço order by preço;
+
+
+select preço, count(*) from produtos where preço >1000.00
+group by preço order by preço;
+
+
+select categoria, count(*) from produtos where categoria = 'Notebook'
+group by categoria order by categoria;
+ 
+
+
+select estoque, count(*) from produtos where estoque = '23'
+group by estoque order by estoque;
+
+
+select estoque, preço from produtos where estoque = '3'
+group by preço
+having preço >= 3000 order by preço;
+
+
+select situação, id_produto, count(*) from pedidos where id_produto = '23'
+group by situação
+having situação = 'entregue' order by situação;
+
+
+select situação, id_cliente, count(*) from pedidos where id_cliente = '25'
+group by situação
+having situação = 'entregue' order by situação;
+
+
+select ano, preço, categoria, count(*) from produtos where ano = '2024'
+ 
+group by categoria having preço >5000 order by categoria;
+
+
+select ano, preço, categoria, count(*) from produtos where ano = 2023
+group by categoria having preço >8000 order by categoria;
+
+
+select nome, id_produto
+from clientes inner join pedidos
+on clientes.id = pedidos.id_produto;
+
+
+select clientes.nome, id_pedido from clientes right join pedidos
+on clientes.id = pedidos.id_cliente;
+
+
+select clientes.nome, id_pedido from clientes left join pedidos
+on clientes.id = pedidos.id_cliente;
+
+
