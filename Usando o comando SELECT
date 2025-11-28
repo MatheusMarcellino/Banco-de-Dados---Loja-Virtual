@@ -1,51 +1,74 @@
 select count(*) from pedidos where id_produto = '23';
  
+
 select count(*) from pedidos where id_produto = '5';
+
 
 select count(*) from pedidos where id_cliente = '250';
 
+
 select count(*) from pedidos where id_cliente = '135';
+
 
 select count(*) from clientes where sexo = 'M';
 
+
 select count(*) from clientes where sexo = 'F';
+
 
 select * from clientes order by nome;
 
+
 select * from clientes order by nome desc;
+
 
 select nome, preço, categoria, estoque from produtos order by nome;
 
+
 select nome, preço, categoria, estoque from produtos order by preço;
  
+
 select categoria from produtos order by categoria;
+
 
 select estoque from produtos order by estoque;
 
+
 select count(*) from clientes where nome like '%A';
+
 
 select * from clientes where nome like '%A';
 
+
 select * from clientes where nome like 'A%';
+
 
 select * from clientes
 where endereço like '%Campinas';
 
+
 select count(*) from clientes
 where endereço like '%Campinas';
 
+
 select count(*) from pedidos where situação = 'entregue';
+
 
 select count(*) from pedidos
 where situação = 'com defeito';
 
+
 select count(*) from pedidos where situação = 'atrasado';
+
 
 select avg(preço) from produtos where preço;
 
+
 select max(preço) from produtos where preço;
 
+
 select min(preço) from produtos where preço;
+
 
 select sum(estoque) from produtos where estoque;
 
