@@ -1,0 +1,85 @@
+update produtos
+set nome = 'LG Gram 15 Ultra-Lightweight 8GB RAM 256GB SSD', ano = '2023', preço = '6820.00'
+where id_produto = '3';
+
+
+update produtos
+set nome = 'Samsung 65" OLED S95D 4K', ano = '2023', preço = '8900.00' where id_produto = 6;
+ 
+
+update produtos
+set nome = 'Acer Predator Helios 300 16GB RAM 1TB SSD', ano = '2023', preço = '6175.00', categoria = 'Notebook'
+where id_produto = 15;
+
+
+update produtos
+set nome = 'TCL 4K 50" UHD', ano = '2024', preço = '2090.00' where id_produto = '28';
+
+
+update produtos
+set nome = 'TCL C855 85" 4K QLED ', ano = '2023', preço = '12200.00',
+categoria = 'TV'
+where id_produto = '17';
+
+
+update produtos
+set nome = 'Lenovo Yoga 9i 32GB RAM 1TB SSD', ano = '2023', preço = '18165.00', categoria = 'Notebook'
+where id_produto = '18';
+
+
+update produtos
+set nome = 'JBL Go 4', ano = '2024', preço = '266.00', categoria = 'Caixa de Som'
+where id_produto = '29';
+
+
+update produtos
+set nome = 'JBL Live Beam 3', ano = '2024', preço = '800.00', categoria = 'Dispositivo de Áudio'
+where id_produto = '31';
+ 
+
+
+update produtos
+set nome = 'Samsung Galaxy Buds FE', ano = '2024', preço = '410.00', categoria = 'Dispositivo de Áudio'
+where id_produto = '33';
+
+
+update produtos
+set nome = 'TWS Motorola Buds+', ano = '2024', preço = '250.00', categoria
+= 'Dispositivo de Áudio' where id_produto = '37';
+
+
+update produtos
+set nome = 'Dell Alienware M15 R7 32GB RAM 1TB SSD', ano = '2023', preço = '5160.00', categoria = 'Notebook'
+where id_produto = '38';
+
+
+update produtos
+set nome = 'Huawei FreeBuds 3', ano = '2024', preço = '748.00', categoria = 'Dispositivo de Áudio'
+where id_produto = '41';
+
+
+update produtos
+set nome = 'AirPods 4', ano = '2024', preço = '1005.00', categoria = 'Dispositivo de Áudio'
+where id_produto = '42';
+
+
+update produtos
+ 
+set nome = 'Samsung Neo QLED QN90D 50" Ultra HD 4K', ano = '2024', preço = '4085.00', categoria = 'TV'
+where id_produto = '45';
+
+
+update produtos
+set nome = 'HP ZBOOK 64GB RAM 1TB SSD', ano = '2023', preço = '8000',
+categoria = 'Notebook' where id_produto = '46';
+
+
+update produtos
+set nome = 'ASUS ROG Strix G17 32GB RAM 1TB SSD', ano = '2023', preço = '16000.00', categoria = 'Notebook'
+where id_produto = '48';
+
+
+update produtos
+set nome = 'MacBook Pro com chip M2 8GB RAM 512GB SSD', ano = '2023', preço = '8800.00', categoria = 'Notebook'
+where id_produto = '58';
+
