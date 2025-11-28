@@ -33,3 +33,19 @@ where endereço like '%Campinas';
 
 select count(*) from clientes
 where endereço like '%Campinas';
+
+select count(*) from pedidos where situação = 'entregue';
+
+select count(*) from pedidos
+where situação = 'com defeito';
+
+select count(*) from pedidos where situação = 'atrasado';
+
+select avg(preço) from produtos where preço;
+
+select max(preço) from produtos where preço;
+
+select min(preço) from produtos where preço;
+
+select sum(estoque) from produtos where estoque;
+
