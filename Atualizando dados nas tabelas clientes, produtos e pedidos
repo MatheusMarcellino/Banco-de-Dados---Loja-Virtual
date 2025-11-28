@@ -1,0 +1,219 @@
+update clientes
+set nome = 'Camila Garcia' where id = '45';
+
+update clientes
+set telefone = '(27)98322-5981' where id = '60';
+
+update clientes
+set telefone = '(21)98432-1199', nome = 'Raquel Almeida'
+ 
+update clientes
+set nome = 'Marcos Fabiano', endereço = 'Rua Dom Pedro I, 46 - Centro - Vitória', telefone = '(27) 96704-2040'
+where id = '204';
+
+select * from clientes;
+
+
+update pedidos
+set situação = 'atrasado' where id_pedido = '45';
+
+update pedidos
+set id_produto = '40', id_cliente = '412' where id_pedido = '80';
+
+update pedidos
+set data_pedido = '2024-01-16', id_produto = '60', id_cliente = '195' where id_pedido = '150';
+
+update pedidos
+set data_pedido = '2024-03-03', situação = 'com defeito', id_produto = '16', id_cliente = '113'
+where id_pedido = '176';
+ 
+update produtos set ano = '2024'
+where id_produto = 2;
+
+update produtos
+set ano = '2024', preço = '6500' where id_produto = 11;
+
+select * from produtos;
+
+
+alter table clientes drop foreign key id_pedido; alter table clientes drop column id_pedido;
+
+alter table produtos drop foreign key id_cliente; alter table produtos drop column id_cliente;
+
+
+update produtos set estoque = ‘4’
+where id_produto = ‘1’;
+
+update produtos set estoque = ‘3’
+where id_produto = ‘2’;
+ 
+set estoque = ‘3’
+where id_produto = ‘3’;
+
+update produtos set estoque = ‘1’
+where id_produto = ‘4’;
+
+update produtos set estoque = ‘2’
+where id_produto = ‘5’;
+
+update produtos set estoque = ‘2’
+where id_produto = ‘6’;
+
+update produtos set estoque = ‘2’
+where id_produto = ‘7’;
+
+update produtos set estoque = ‘4’
+where id_produto = ‘8’;
+
+update produtos set estoque = ‘2’
+ 
+update produtos set estoque = ‘3’
+where id_produto = ‘10’;
+
+update produtos set estoque = ‘23’
+where id_produto = ‘11’;
+
+update produtos set estoque = ‘22’
+where id_produto = ‘12’;
+
+update produtos set estoque = ‘22’
+where id_produto = ‘13’;
+
+update produtos set estoque = ‘23’
+where id_produto = ‘14’;
+
+update produtos set estoque = ‘22’
+where id_produto = ‘15’;
+ 
+set estoque = ‘24’
+where id_produto = ‘16’;
+
+update produtos set estoque = ‘18’
+where id_produto = ‘17’;
+
+update produtos set estoque = ‘17’
+where id_produto = ‘18’;
+
+update produtos set estoque = ‘30’
+where id_produto = ‘19’;
+
+update produtos set estoque = ‘3’
+where id_produto = ‘20’;
+
+update produtos set estoque = ‘25’
+where id_produto = ‘21’;
+
+update produtos set estoque = ‘20’
+ 
+update produtos set estoque = ‘26’
+where id_produto = ‘23’;
+
+update produtos set estoque = ‘20’
+where id_produto = ‘24’;
+
+update produtos set estoque = ‘6’
+where id_produto = ‘25’;
+
+update produtos set estoque = ‘19’
+where id_produto = ‘26’;
+
+update produtos set estoque = ‘20’
+where id_produto = ‘27’;
+
+update produtos set estoque = ‘21’
+where id_produto = ‘28’;
+ 
+set estoque = ‘27’
+where id_produto = ‘29’;
+
+update produtos set estoque = ‘3’
+where id_produto = ‘30’;
+
+update produtos set estoque = '23'
+where id_produto = '31';
+
+update produtos set estoque = '17'
+where id_produto = '32';
+
+update produtos set estoque = '20'
+where id_produto = '33';
+
+update produtos set estoque = '6'
+where id_produto = '34';
+
+update produtos set estoque = '19'
+ 
+update produtos set estoque = '14'
+where id_produto = '36';
+
+update produtos set estoque = '26'
+where id_produto = '37';
+
+update produtos set estoque = '18'
+where id_produto = '38';
+
+update produtos set estoque = '19'
+where id_produto = '39';
+
+update produtos set estoque = '4'
+where id_produto = '40';
+
+update produtos set estoque = '26'
+where id_produto = '41';
+ 
+set estoque = '19'
+where id_produto = '42';
+
+update produtos set estoque = '21'
+where id_produto = '43';
+
+update produtos set estoque = '34'
+where id_produto = '44';
+
+update produtos set estoque = '24'
+where id_produto = '45';
+
+update produtos set estoque = '19'
+where id_produto = '46';
+
+update produtos set estoque = '22'
+where id_produto = '47';
+
+update produtos set estoque = '29'
+ 
+update produtos set estoque = '21'
+where id_produto = '49';
+
+
+update produtos set estoque = '3'
+where id_produto = '50';
+
+update produtos set estoque = '20'
+where id_produto = '51';
+
+update produtos set estoque = '26'
+where id_produto = '52';
+
+update produtos set estoque = '18'
+where id_produto = '53';
+
+update produtos set estoque = '24'
+where id_produto = '54';
+ 
+set estoque = '18'
+where id_produto = '55';
+
+update produtos set estoque = '24'
+where id_produto = '56';
+
+update produtos set estoque = '18'
+where id_produto = '57';
+
+update produtos set estoque = '25'
+where id_produto = '58';
+
+update produtos set estoque = '23'
+where id_produto = '59';
+
+update produtos set estoque = '3'
+where id_produto = '60';
